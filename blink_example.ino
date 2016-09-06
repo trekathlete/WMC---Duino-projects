@@ -14,14 +14,49 @@ void setup()
 
 void loop() 
 {
-  // this is the command to use a digital pin in output mode
-  digitalWrite(LED, HIGH);
+  int newRan = random(0, 2);
 
-  // delay is in in milliseconds
-  delay(1000);
+  if(newRan == 0)
+  {
+    // this is the command to use a digital pin in output mode
+    digitalWrite(LED, HIGH);
+  
+    // delay is in in milliseconds
+    delay(1000);
+  
+    digitalWrite(LED, LOW);
+  
+    delay(1000);
+  }
 
-  digitalWrite(LED, LOW);
+  if(newRan == 1)
+  {
+    int count = 0;
+    while( count < 1000 )
+    {
+      digitalWrite(LED, HIGH);
 
-  delay(1000);
+      count += 20;
+      delay(count);
+    
+      digitalWrite(LED, LOW);
 
+      count += 20;
+      delay(count);
+    }
+  }
+
+  if(newRan == 2)
+  {
+    for(int i = 0; i < 1000; i += 50)
+    {
+      digitalWrite(LED, HIGH);
+      
+      delay(i);
+    
+      digitalWrite(LED, LOW);
+    
+      delay(i);
+    }
+  }
 }
