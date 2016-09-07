@@ -1,0 +1,100 @@
+#define LED 13
+void setup() 
+{
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  int newRand = random(1,4);
+
+  switch (newRand)
+  {
+    case 'a':
+      Serial.println("this is case 0");
+      
+      // i just editied this here
+      
+      break;
+    case 'b':
+      Serial.println("this is case 1");
+      break;
+    case 'c':
+      Serial.println("this is case 2");
+      break;
+    case 'd':
+      Serial.println("this is case 2");
+      break;
+    case 'e':
+      Serial.println("this is case 2");
+      break;
+    case 'f':
+      Serial.println("this is case 2");
+      break;
+    case 'g':
+      Serial.println("this is case 2");
+      break;
+    case 'h':
+      Serial.println("this is case 2");
+      break;
+    case 'i':
+      Serial.println("this is case 2");
+      break;
+    case 'j':
+      Serial.println("this is case 2");
+      break;
+    case 'k':
+      Serial.println("this is case 2");
+      break;
+    case 'l':
+      Serial.println("this is case 2");
+      break;
+    case 'm':
+      Serial.println("this is case 2");
+      break;
+    case 'n':
+      Serial.println("this is case 2");
+      break;
+    case 'o':
+      Serial.println("this is case 2");
+      break;
+    case 'p':
+      Serial.println("this is case 2");
+      break;
+    case 'q':
+      Serial.println("this is case 2");
+      break;
+    case 'r':
+      Serial.println("this is case 2");
+      break;
+    case 's':
+      Serial.println("this is case 2");
+      break;
+    case 't':
+      Serial.println("this is case 2");
+      break;
+    case 'u':
+      Serial.println("this is case 2");
+      break;
+    case 'v':
+      Serial.println("this is case 2");
+      break;
+    case 'w':
+      Serial.println("this is case 2");
+      break;
+    case 'x':
+      Serial.println("this is case 2");
+      break;
+    case 'y':
+      Serial.println("this is case 2");
+      break;
+    case 'z':
+      Serial.println("this is case 2");
+      break;
+    default:
+      Serial.println("something went wrong -- default found");
+      break;   
+  }
+
+  delay(500);
+}
