@@ -12,6 +12,9 @@ void loop()
   {
     case 'a':
       Serial.println("this is case 0");
+      
+      // i just editied this here
+      
       break;
     case 'b':
       Serial.println("this is case 1");
